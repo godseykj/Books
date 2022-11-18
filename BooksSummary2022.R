@@ -11,3 +11,4 @@ plot1 <- ggplot(books, aes(x = num, y = Words, fill = Genre)) +
   labs(x = "") +
   theme_classic()
 plot1
+ggsave(filename = "plot1.png", plot = plot1, width = 2560, height = 1440, units= "px", dpi = "screen")
